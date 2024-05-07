@@ -2,21 +2,21 @@ let card = document.querySelector("#cards");
 
 const product = [
   {
-    id: 1,
+    id: 4,
     name: "watch",
     price: 2,
     img: "watch.jpg",
     description: "waa ku iibso qiimo yare",
   },
   {
-    id: 2,
+    id: 5,
     name: "pc",
     price: 1,
     img: "pcL.jpg",
     description: "cun",
   },
   {
-    id: 1,
+    id: 6,
     name: "shirt",
     price: 2,
     img: "watch.jpg",
@@ -47,13 +47,13 @@ product.map((item) => {
           </div>
             <div class="btn">
              <div class="d-none">${item.id}</div>
-             <a href="./cart.html">
+     
               <button type="button"  class="btn btn-primary text-white " style= "background-color: #1e1c66;;" >
                
                 Add Cart<i class="fa-solid fa-cart-shopping"  ></i>    
                 
               </button>
-              </a>
+      
             </div>
         </div>
     </div>
@@ -69,7 +69,6 @@ card.addEventListener("click", (e) => {
     let fil = product.filter(function (product) {
       return product.id == id;
     });
-    
 
     let localstorage = JSON.parse(localStorage.getItem("product")) || [];
 
@@ -98,7 +97,6 @@ card.addEventListener("click", (e) => {
           quantity: 1,
         };
         localstorage.push(productItem); // Update the localstorage array
-        localstorage.pop();
         localStorage.setItem("product", JSON.stringify(localstorage)); // Update local storage with the updated array
         window.location = "/cart.html";
       } else {
