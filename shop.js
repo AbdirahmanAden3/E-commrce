@@ -6,22 +6,68 @@ const product = [
     name: "watch",
     price: 2,
     img: "watch.jpg",
-    description: "waa ku iibso qiimo yare",
+    description: " ku iibso qiimo yare",
   },
   {
     id: 5,
     name: "pc",
     price: 1,
     img: "pcL.jpg",
-    description: "cun",
+    description: "128Gb|SSD| hpp",
   },
   {
     id: 6,
     name: "shirt",
     price: 2,
     img: "watch.jpg",
+    description: "turkish shirts",
+  },
+  {
+    id: 7,
+    name:"shirts",
+    price: 10,
+    img: "./shirt.jpg",
+    description: "turkish shirts",
+  },
+
+
+  {
+    id: 8,
+    name: "packpack",
+    price: 7,
+    img: "backbac0_.jpg",
+    description: "it very cheap",
+  },
+  {
+    id: 9,
+    name: "sneakers",
+    price: 2,
+    img: "./images.jpg",
+    description: "high quality  ",
+  },
+  {
+    id: 10,
+    name:"mango",
+    price: 2,
+    img: "172326.jpg",
+    description: "cambo quality ah",
+  },
+  {
+    id: 12,
+    price: 2,
+    name:"tires",
+    img: "./images (2).jpg",
     description: "waa tufafiican",
   },
+  {
+    id: 7,
+    price: 2,
+    img: "./shirt.jpg",
+    description: "waa tufafiican",
+  },
+
+
+   
 ];
 
 let htm = "";
@@ -29,11 +75,11 @@ let htm = "";
 product.map((item) => {
   htm += `
 
-    <div class="col-md-3" >
-    <div class="card ">
+    <div class="col-md-4 "  >
+    <div class="card" >
        
         <img src="./img/${item.img}" alt="">
-        <div class="card-body w-300 ">
+        <div class="card-body w-200">
           <h2 class="card-1 text-center h-30px">${item.name}</h2>
           <p class="card-text text-center">${item.description}</p>
           <h3 class="text-center">$${item.price}</h3>

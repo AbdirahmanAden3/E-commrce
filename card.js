@@ -2,6 +2,8 @@ let tbody = document.getElementById("tbody");
 
 let localstorage = JSON.parse(localStorage.getItem("product")) || [];
 
+
+
 let html = "";
 localstorage.map((product) => {
   html += `
@@ -37,6 +39,18 @@ localstorage.map((product) => {
 
 tbody.innerHTML = html;
 
+
+let order = document.getElementById("#order")
+order.addEventListener("click",()=>{
+
+  alert("your order is placed")
+
+})
+
+
+
+
+
 tbody.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-trash")) {
     // Using contains() instead of ==
@@ -54,3 +68,22 @@ tbody.addEventListener("click", (e) => {
 });
 
 // Function to update quantity and total
+
+
+///
+
+
+// function AddCart() {
+//   var card = document.getElementById("cart");
+
+//   if(CartTotal === 0) {
+//       card.innerHTML = CartTotal+=1;
+   
+//   } 
+//   else {
+//       card.innerHTML =  CartTotal+=2;
+//   }
+ 
+// }
+
+
