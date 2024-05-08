@@ -47,11 +47,13 @@ product.map((item) => {
         </div>
           <div class="btn">
            <div class="d-none">${item.id}</div>
+        
             <button type="button"  class="btn btn-primary text-white " style= "background-color: #1e1c66;;" >
-             
               Add Cart<i class="fa-solid fa-cart-shopping"  ></i>    
               
             </button>
+          
+           
           </div>
       </div>
   </div>

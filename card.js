@@ -2,8 +2,6 @@ let tbody = document.getElementById("tbody");
 
 let localstorage = JSON.parse(localStorage.getItem("product")) || [];
 
-
-
 let html = "";
 localstorage.map((product) => {
   html += `
@@ -40,15 +38,6 @@ localstorage.map((product) => {
 tbody.innerHTML = html;
 
 
-let order = document.getElementById("#order")
-order.addEventListener("click",()=>{
-
-  alert("your order is placed")
-
-})
-
-
-
 
 
 tbody.addEventListener("click", (e) => {
@@ -68,11 +57,6 @@ tbody.addEventListener("click", (e) => {
 });
 
 // Function to update quantity and total
-
-
-///
-
-
 // function AddCart() {
 //   var card = document.getElementById("cart");
 
